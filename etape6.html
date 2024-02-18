@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appstyles.css">
+    <title>Etape6</title>
+</head>
+<body>
+
+<div id="table_container">
+    <div id="form_container">
+        <div class="form_groupe">
+            <label for="form_name" class="form_label">Nom</label>
+            <input type="text" class="form_field" id="forme_name">
+        </div>
+        <div class="form_groupe">
+            <label for="form_prenom" class="form_label">Prenom</label>
+            <input type="text" class="form_field" id="forme_prenom">
+        </div>
+        <div class="form_groupe">
+            <label for="form_point" class="form_label">Points</label>
+            <input type="number" class="form_field" id="form_point">
+        </div>
+        <button class="btn-add" onclick="doNewData()">Ajouter</button>
+    </div>    
+    
+    <table>
+    <thead>
+        <tr>
+            <th class="colnumber">N°</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th class="colnumber">Points</th>
+            <th>Select</th>
+        </tr>
+    </thead>  
+    </table>
+    <div id="container_summary">
+        <p id="p1">0 ligne(s)</p>
+        <p id="p2"></p>
+        <p id="p3">Total point(s)=0</p>
+    </div>
+    <div id="container_btn">
+        <button class="btn-console" onclick="ConsoleTableau()">tableau console</button> 
+        <button class="btn-del" onclick="deleteRow()">Supprimer</button>
+    </div>
+</div>
+
+
+<script src="application.js"></script>
+</body>
+</html>
